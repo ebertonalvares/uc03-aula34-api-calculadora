@@ -1,0 +1,20 @@
+### status
+
+GET http://localhost:5000/status
+
+### Boas vindas
+GET http://localhost:5000/conta/1313-0
+
+
+### Saldo
+GET http://localhost:5000/conta/1313-0/saldo
+
+
+### Depósito DINHEIRO
+POST http://localhost:5000/conta/1313-0/deposito
+Content-Type: application/json
+
+{
+  "valor": 100,
+  "tipo_deposito": "DINHEIRO"
+}
