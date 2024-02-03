@@ -1,9 +1,11 @@
 ### status
 
 GET http://localhost:5000/status
+Authorization: 'Bearer 123456'
 
 ### Boas vindas
 GET http://localhost:5000/contas/1313-0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvX2lkIjoiYmI0NzFhNTgtYmFkZS00OWUxLTlhMzItNWU2MmQ0Y2MwNzY2IiwiZW1haWwiOiJmdWxhbm9AZW1haWwuY29tIiwiaWF0IjoxNzA2OTE5NTg4LCJleHAiOjE3MDY5MjMxODh9.Evd-iJtf5hrXEbTEUsUgPwAnLuoXIlW8xm77ALx6Jqo
 
 
 ### Saldo
@@ -24,6 +26,6 @@ POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-  "email": "fulano@email.com2",
-  "senha": "1234516"
+  "email": "fulano@email.com",
+  "senha": "123456"
 }

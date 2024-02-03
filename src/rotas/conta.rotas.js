@@ -34,7 +34,9 @@ function buscaContaPorNumero(numero_conta) {
 
 
 router.get('/:numero_conta', (request, response) => {
-    const { numero_conta } = request.params;
+  const { numero_conta } = request.params;
+  
+console.log(`Usuario logado: ${request.usuario.usuario_id}`)  
   
     const contaEncontrada = buscaContaPorNumero(numero_conta);
   
