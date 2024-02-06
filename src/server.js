@@ -3,6 +3,11 @@ import contaRotas from './rotas/conta.rotas.js'
 import mainRotas from './rotas/main.rotas.js'
 import loginRotas from './rotas/login.rotas.js'
 import {authorizeMiddleware} from './middlewares/auth.middlewares.js'
+import database from './database/index.js'
+
+
+
+
 const app = express()
 const port = process.env.PORT || 5000
 
@@ -15,7 +20,11 @@ app.get("/status", mainRotas.status)
 app.use('/contas', authorizeMiddleware,  contaRotas.router)
 app.use(loginRotas.router)
 
+const db = database.getDB()
 
+const contas = await db.query('SELECT * FROM banco.CONTAS')
+
+console.log('contas', contas)
 
 app.listen(port, () => {
   console.log(`API rodando na porta ${port}`)
