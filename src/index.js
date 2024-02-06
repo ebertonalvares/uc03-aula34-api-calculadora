@@ -4,7 +4,7 @@ import mainRotas from './rotas/main.rotas.js'
 import loginRotas from './rotas/login.rotas.js'
 import {authorizeMiddleware} from './middlewares/auth.middlewares.js'
 const app = express()
-const port = process.env.PORT
+const port = process.env.PORT || 5000
 
 app.use(express.json())
 

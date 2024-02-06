@@ -5,12 +5,12 @@ Authorization: 'Bearer 123456'
 
 ### Boas vindas
 GET http://localhost:5000/contas/1313-0
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvX2lkIjoiYmI0NzFhNTgtYmFkZS00OWUxLTlhMzItNWU2MmQ0Y2MwNzY2IiwiZW1haWwiOiJmdWxhbm9AZW1haWwuY29tIiwiaWF0IjoxNzA2OTE5NTg4LCJleHAiOjE3MDY5MjMxODh9.Evd-iJtf5hrXEbTEUsUgPwAnLuoXIlW8xm77ALx6Jqo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvX2lkIjoiYmI0NzFhNTgtYmFkZS00OWUxLTlhMzItNWU2MmQ0Y2MwNzY2IiwiZW1haWwiOiJmdWxhbm9AZW1haWwuY29tIiwiaWF0IjoxNzA3MTcyNzU1LCJleHAiOjE3MDcxNzYzNTV9.fzQUC3SX0QOezK35s_ZRiyDU7W_5ddwahAOLtV1Qy04
 
 
 ### Saldo
 GET http://localhost:5000/contas/1313-0/saldo
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvX2lkIjoiYmI0NzFhNTgtYmFkZS00OWUxLTlhMzItNWU2MmQ0Y2MwNzY2IiwiZW1haWwiOiJmdWxhbm9AZW1haWwuY29tIiwiaWF0IjoxNzA3MTcyNzU1LCJleHAiOjE3MDcxNzYzNTV9.fzQUC3SX0QOezK35s_ZRiyDU7W_5ddwahAOLtV1Qy04
 
 ### Depósito DINHEIRO
 POST http://localhost:5000/contas/1313-0/deposito
