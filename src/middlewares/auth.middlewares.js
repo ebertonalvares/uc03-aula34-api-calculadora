@@ -22,7 +22,7 @@ if(!tokenValidado || tokenValidado.error){
 }
 
 
-    request.usuario = tokenValidado.payload
+    request.session = tokenValidado.payload
     //seguir com a requisicao 
     next()
 }

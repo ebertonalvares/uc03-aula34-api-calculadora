@@ -52,3 +52,14 @@ Content-Type: application/json
   "usuario":"eberton",
   "senha":"eberton"
 }
+
+###Atualizar dados pessoa
+PATCH  http://localhost:5000/pessoas/265c4e5b-789c-45a8-8e28-cc55ddf16f79/atualizar
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvX2lkIjoiYmI0NzFhNTgtYmFkZS00OWUxLTlhMzItNWU2MmQ0Y2MwNzY2IiwiZW1haWwiOiJmdWxhbm9AZW1haWwuY29tIiwiaWF0IjoxNzA3MzUzODgwLCJleHAiOjE3MDczNTc0ODB9.0WckSOTN9Vpe1bda7DiQiOo9chMC_AK-B73GwFHk-sA
+{
+  "nome_completo": "Eberton Alvares",
+  "cpf":"12345678900",
+  "usuario":"eberton",
+  "senha":"eberton"
+}
